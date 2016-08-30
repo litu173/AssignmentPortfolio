@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Contact Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="validate.js"></script>
+	
+</head>
+
+<body>
+
+	<div class="header_top">
+		<div class="myDetails">
+			<h1>Md. Mutaher Hossain Litu</h1>
+			<P>UI and UX Designer</P><br/>
+			<ul>
+				<li class="address">58/Ga/18, West Rajabazar, Tejgaon, Dhaka-1215</li>
+				<li class="mail">hossain.tex2815@gmail.com</li>
+				<li class="phone">+880 1730 273 573</li>
+		</div>
+		<div class="myPhoto">
+			<img src="me2.jpg" alt="lituImage">
+		</div>
+	</div>
+
+	<div class="mainNav">
+		<nav>
+			<ul>
+	      		<li><a href="index.html">HOME</a></li>
+	    		<li class="dropdown">
+	    			<a class="dropbtn">INFO</a>
+				    <div class="dropdown-content">
+			        	<a href="career.html">Career</a>
+			        	<a href="academic.html">Academic</a>
+			        	<a href="personal.html">Personal</a>
+				    </div>
+	        	</li>
+		        <li><a href="gallery.html">GALLERY</a></li>
+	        	<li><a class="active" href="contact.html">CONTACT ME</a></li>
+	        	<li><a href="admin.html">ADMIN</a></li>
+		    </ul>
+		</nav>
+	</div>
+
+
+	<div class="contact">
+		<h1>Keep in touch</h1>
+		<form method="post" action="contactengine.php" id="contactform" name="contact_form">
+
+		<label for="Name">Name:</label>
+
+			<input type="text" name="Name" id="Name" class="required" />
+
+		<label for="Email">Email:</label>
+
+			<input type="text" name="Email" id="Email" class="required email" />
+
+		<label for="Message">Message:</label>
+
+			<textarea name="Message" id="Message" rows="10" cols="20" class="required"></textarea>
+		<div class="clear"></div>
+		<input type="submit" name="submit" value="" class="submit-button" onClick="return contact_verify()" />
+		</form>
+	</div>
+
+	<footer class="footer_area">
+		<div class="footer_copyright">
+			<p>&copy; Copyright 2016 | Md. Mutaher Hossain Litu</p>
+		</div>
+
+      	<div class="footer_social">
+            <ul>
+              <li><a href="#" title="Download.pdf"><img src="images/icn-save.jpg" alt="Download the pdf version" /></a></li>
+              <li><a href="javascript:window.print()" title="Print"><img src="images/icn-print.jpg" alt="" /></a></li>
+              <li><a id="contact" href="contact/index.html" title="Contact Me"><img src="images/icn-contact.jpg" alt="" /></a></li>
+              <li><a href="wwww.twitter.com/litu173" title="Follow me on Twitter"><img src="images/icn-twitter.jpg" alt="" /></a></li>
+              <li><a href="wwww.facebook.com/litu173" title="My Facebook Profile"><img src="images/icn-facebook.jpg" alt="" /></a></li>
+            </ul>
+      	</div>
+	</footer>
+	
+</body>
+</html>
